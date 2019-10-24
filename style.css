@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+    header {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+    }
+
+    nav a {
+        padding: 10px;
+
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    article {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    article img {
+        height: 220px;
+    }
+    article h3.postTitle {
+        margin-top: 10px;
+        font-size: 1.5em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    article p.publishDate {
+        font-size: 0.8em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    article p.postContent {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    article p.postAuthor {
+        font-size: 0.8em;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

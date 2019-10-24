@@ -11,18 +11,37 @@ require __DIR__.'/functions.php';
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
         <title></title>
     </head>
     <body>
-    
+
+    <header>
+        <h1>Yrgo Times</h1>
+        
+    </header>
+
+    <nav>
+        <a>Home</a>
+        <a>Articles</a>
+        <a>About</a>
+    </nav>
+
+        <h2>Articles</h2>
+
     <?php foreach ($posts as $post) :?>
 
-        <h1><?= $post['title']?></h1>
-        <p><?= $post['date']?></p>
-        <p><?= $post['content']?></p>
-        <?= getAuthorName($authors, $post);?>
+    <article>
+        <img class="headerImage" src="<?= $post['header']?>">
+        <h3 class="postTitle"><?= $post['title']?></h3>
+        <p class="publishDate">Published: <?= $post['date']?></p>
+        <p class="postContent"><?= $post['content']?></p>
+        <p class="postAuthor"><?= getAuthorName($authors, $post);?><p>
+    </article>
 
     <?php endforeach ;?>
+    
 
     </body>
 </html>

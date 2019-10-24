@@ -13,7 +13,7 @@ function getAuthorName(array $authors, array $post) : string
         $id = $author['id'];
         $name = $author['name'];
         if ($postId === $id) {
-            return $name;
+            return "Author: $name";
         }
     }
 }
