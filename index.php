@@ -23,13 +23,13 @@ require __DIR__.'/functions.php';
     </header>
 
     <nav>
-        <a>Home</a>
-        <a>Articles</a>
-        <a>About</a>
+        <a>HOME</a>
+        <a>ARTICLES</a>
+        <a>ABOUT</a>
     </nav>
-
+    <div class="newsfeedTitle">
         <h2>Articles</h2>
-
+    </div>
     <?php foreach ($posts as $post) :?>
 
     <article>
