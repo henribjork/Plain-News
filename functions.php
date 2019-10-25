@@ -17,3 +17,6 @@ function getAuthorName(array $authors, array $post) : string
         }
     }
 }
+function sortFunction($a, $b) {
+    return strtotime($b['date']) - strtotime($a["date"]);
+}
