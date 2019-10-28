@@ -3,31 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'PT Serif', serif;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-
     header {
-        font-size: 1.5em;
+        font-size: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 200px;
         width: 100%;
     }
-    
     nav {
+        font-size: 1em;
         display: flex;
-        justify-content: space-around;
-        margin: 10px;
-        border-bottom: 1px solid grey;
-        border-top: 1px solid grey;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    nav a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    nav a:hover {
+        color: #e3e3e3;
     }
 
     nav a {
@@ -44,10 +50,13 @@ body {
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        min-width: 50%;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e3e3e3;
     }
     article img {
-        height: 100%;
         width: 100%;
+        height: 100%;
     }
     article h3.postTitle {
         margin-top: 10px;
@@ -72,6 +81,48 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .postLikesConatiner {
+        display: flex;
+    }
+    .fa-thumbs-o-up {
+        color: blue;
+        margin: 10px;
+    }
+    .btnScrollToTop {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        opacity: 80%;
+    }
+    .btnScrollToTop:hover {
+        cursor:pointer;
+        background: #111;
+    }
+    footer {
+        border-bottom: 1px solid #e3e3e3;
+        width: 100%;
+        margin: 20px auto 70px auto;
+    }
+    footer h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer p {
+        font-size: 0.8em;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+    footer p.copyright {
+        text-align: right;
+    }
 
 }
 
@@ -87,17 +138,23 @@ body {
     }
     
     nav {
-        font-size: 1.3em;
+        text-decoration: none;
+        font-size: 1em;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 10px;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
     }
-
     nav a {
         padding: 10px;
-
+        text-decoration: none;
+        color: black;
+    }
+    nav a:hover {
+        padding: 10px;
+        cursor: pointer;
+        color: #e3e3e3;
     }
     .newsfeedTitle {
         display: flex;
@@ -119,6 +176,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+    
     article img {
         height: 100%;
         width: 100%;
@@ -146,7 +204,47 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
-}
+    .postLikesConatiner {
+        display: flex;
+    }
+    .fa-thumbs-o-up {
+        color: blue;
+        margin: 10px;
+    }
+    .btnScrollToTop {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        opacity: 80%;
+    }
+    .btnScrollToTop:hover {
+        cursor:pointer;
+        background: #111;
+    }
+    footer {
+        border-bottom: 1px solid #e3e3e3;
+        width: 100%;
+    }
+    footer h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer p {
+        font-size: 0.8em;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+    }
+    footer p.copyright {
+        text-align: right;
+    }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -158,39 +256,56 @@ body {
         height: 250px;
         width: 100%;
     }
+    
     nav {
-        font-size: 1.3em;
+        font-size: 1em;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80%;
         margin: 0 auto;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
     }
     nav a {
         padding: 10px;
+        overflow: hidden;
     }
+    nav a:hover {
+        padding: 10px;
+        cursor: pointer;
+        color: #e3e3e3;
+    }
+    
     .newsfeedTitle {
         display: flex;
         justify-content: center;
     }
+
     .newsfeedTitle h2 {
         font-size: 2em;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
         margin-left: 10px;
         width: 80%;
     }
+
     article {
         margin: 0 auto;
         width: 80%;
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .headerImageContainer {
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
     }
     article img {
-        height: 100%;
-        width: 100%;
+        object-fit: cover;
+        border: 2px solid #e3e3e3;
     }
     article h3.postTitle {
         margin-top: 10px;
@@ -215,8 +330,31 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
-
-}
+    .postLikesConatiner {
+        display: flex;
+    }
+    .fa-thumbs-o-up {
+        color: blue;
+        margin: 10px;
+    }
+    footer {
+        border-bottom: 1px solid #e3e3e3;
+        width: 80%;
+        margin: 20px auto;
+    }
+    footer h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer p {
+        font-size: 0.8em;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+    }
+    footer p.copyright {
+        text-align: right;
+    }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -228,39 +366,56 @@ body {
         height: 250px;
         width: 100%;
     }
+    
     nav {
-        font-size: 1.3em;
+        font-size: 1em;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 70%;
         margin: 0 auto;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
     }
     nav a {
         padding: 10px;
+        overflow: hidden;
     }
+    nav a:hover {
+        padding: 10px;
+        cursor: pointer;
+        color: #e3e3e3;
+    }
+    
     .newsfeedTitle {
         display: flex;
         justify-content: center;
     }
+
     .newsfeedTitle h2 {
         font-size: 2em;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
         margin-left: 10px;
         width: 70%;
     }
+
     article {
         margin: 0 auto;
         width: 70%;
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .headerImageContainer {
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
     }
     article img {
-        height: 100%;
-        width: 100%;
+        object-fit: cover;
+        border: 2px solid #e3e3e3;
     }
     article h3.postTitle {
         margin-top: 10px;
@@ -285,8 +440,31 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
-
-}
+    .postLikesConatiner {
+        display: flex;
+    }
+    .fa-thumbs-o-up {
+        color: blue;
+        margin: 10px;
+    }
+    footer {
+        border-bottom: 1px solid #e3e3e3;
+        width: 70%;
+        margin: 20px auto;
+    }
+    footer h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer p {
+        font-size: 0.8em;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+    }
+    footer p.copyright {
+        text-align: right;
+    }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -300,6 +478,7 @@ body {
     }
     
     nav {
+        text-decoration: none;
         font-size: 1em;
         display: flex;
         justify-content: space-between;
@@ -380,7 +559,6 @@ body {
         margin: 10px;
     }
     footer {
-        border-top: 1px solid #e3e3e3;
         border-bottom: 1px solid #e3e3e3;
         width: 50%;
         margin: 20px auto;

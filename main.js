@@ -11,4 +11,8 @@ function scrollToAboutPosition() {
     elmnt.scrollIntoView({ behavior: 'smooth' });
     console.log(elmnt);
 } 
-
+function scrollToHomePosition() {
+    const elmnt = document.querySelector('.home');
+    elmnt.scrollIntoView({ behavior: 'smooth' });
+    console.log(elmnt);
+} 

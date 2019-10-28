@@ -14,18 +14,20 @@ usort($posts, "sortFunction");
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
         <script src="https://use.fontawesome.com/a3e141a305.js"></script>
         <title></title>
     </head>
     <body>
     
-    <header>
+    <header class="home">
         <h1>Yrgo Times</h1>
         
     </header>
 
     <nav>
-        <a>HOME</a>
+        <a href="#">HOME</a>
         <a onclick="scrollToArticlePosition()">ARTICLES</a>
         <a onclick="scrollToAboutPosition()">ABOUT</a>
     </nav>
@@ -51,6 +53,10 @@ usort($posts, "sortFunction");
     </article>
 
     <?php endforeach ;?>
+
+    <button class="btnScrollToTop" onclick="scrollToHomePosition()">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
     <footer>
         <h2 class="aboutSection">Yrgo Times	&#8482;</h2>
