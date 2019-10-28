@@ -337,10 +337,16 @@ body {
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e3e3e3;
     }
-    article img {
+    .headerImageContainer {
         height: 400px;
         width: 100%;
+        overflow: hidden;
+    }
+    article img {
+        object-fit: cover;
         border: 2px solid #e3e3e3;
     }
     article h3.postTitle {
@@ -365,6 +371,13 @@ body {
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .postLikesConatiner {
+        display: flex;
+    }
+    .fa-thumbs-o-up {
+        color: blue;
+        margin: 10px;
     }
     footer {
         border-top: 1px solid #e3e3e3;

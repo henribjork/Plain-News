@@ -1,0 +1,2 @@
+Add new styling to media queries.
+Add function to home button.

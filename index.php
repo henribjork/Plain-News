@@ -14,6 +14,7 @@ usort($posts, "sortFunction");
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/a3e141a305.js"></script>
         <title></title>
     </head>
     <body>
@@ -28,6 +29,7 @@ usort($posts, "sortFunction");
         <a onclick="scrollToArticlePosition()">ARTICLES</a>
         <a onclick="scrollToAboutPosition()">ABOUT</a>
     </nav>
+    
 
     <div class="newsfeedTitle">
         <h2>ARTICLES</h2>
@@ -35,11 +37,17 @@ usort($posts, "sortFunction");
     <?php foreach ($posts as $post) :?>
 
     <article>
+        <div class="headerImageContainer">
         <img class="headerImage" src="<?= $post['header']?>">
+        </div>
         <h3 class="postTitle"><?= $post['title']?></h3>
         <p class="publishDate">Published: <?= $post['date']?></p>
         <p class="postContent"><?= $post['content']?></p>
         <p class="postAuthor"><?= getAuthorName($authors, $post);?><p>
+        <div class="postLikesContainer">
+            <p class="fa fa-thumbs-o-up" aria-hidden="true" ><?= $post['likes']?><p>
+             <!-- To improve web accessibility, using aria-hidden="true" hides icons used purely for decoration.-->
+        </div>
     </article>
 
     <?php endforeach ;?>
