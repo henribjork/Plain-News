@@ -1,7 +1,5 @@
 <?php
 declare(strict_types=1);
-// This is the file where you can keep your data arrays such as articles and
-// authors.
 
 $authors = [
     ['name' => 'Guy McMan', 'id' => 1],
@@ -10,7 +8,6 @@ $authors = [
     ['name' => 'Wright Er', 'id' => 4],
     ['name' => 'Faye K. Neighm', 'id' => 5]
 ];
-
 
 $posts = [
     ['header' => './images/jerry.jpg', 'title' => '‘Seinfeld’ Producers Reveal They Originally Planned To Kill Off Jerry In The Pilot', 'date' => '2019-01-22', 'content' => file_get_contents('./articles/jerry.txt'), 'authorId' => 4, 'likes' => 5],
