@@ -23,11 +23,11 @@ $posts = [
 
     ['header' => './images/kim.jpg', 'title' => 'Kim Kardashian Tries To Escape L.A. In Rowboat After Realizing Past 12 Years Of Life Have Been TV Show', 'date' => '2019-01-21', 'content' => file_get_contents('./articles/kim.txt'), 'authorId' => 5, 'likes' => 10],
 
-    ['header' => './images/bustour.jpg', 'title' => 'Bus Tour Takes Fans Down Iconic ‘Joker’ Stairs', 'date' => '2019-01-10', 'content' => 'Forem Ipsum', 'authorId' => 1, 'likes' => 9],
+    ['header' => './images/bustour.jpg', 'title' => 'Bus Tour Takes Fans Down Iconic ‘Joker’ Stairs', 'date' => '2019-01-10', 'content' => file_get_contents('./articles/bustour.txt'), 'authorId' => 1, 'likes' => 9],
 
-    ['header' => './images/legstretch.jpg', 'title' => 'Why Stretching Your Legs is Overrated', 'date' => '2019-01-07', 'content' => 'Gorem Ipsum', 'authorId' => 2, 'likes' => 5],
+    ['header' => './images/legstretch.jpg', 'title' => 'Why Stretching Your Legs is Overrated', 'date' => '2019-01-07', 'content' => file_get_contents('./articles/legstretch.txt'), 'authorId' => 2, 'likes' => 5],
 
-    ['header' => './images/vandelay.jpg', 'title' => 'Vandelay Industries Files for Bankruptcy', 'date' => '2019-01-08', 'content' => 'Horem Ipsum', 'authorId' => 3, 'likes' => 2],
+    ['header' => './images/vandelay.jpg', 'title' => 'Vandelay Industries Files for Bankruptcy', 'date' => '2019-01-08', 'content' => file_get_contents('./articles/vandelay.txt'), 'authorId' => 3, 'likes' => 2],
 
     ['header' => './images/punk.jpg', 'title' => 'Punk Mortified After Being Named Employee of the Month', 'date' => '2019-01-12', 'content' => file_get_contents('./articles/punk.txt'), 'authorId' => 4, 'likes' => 10],
 

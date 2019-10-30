@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
-
 // gets the post authors name by comparing the two ID's in the $posts and $authors array.
 function getAuthorName(array $authors, array $post) : string  
 {
@@ -19,7 +16,7 @@ function getAuthorName(array $authors, array $post) : string
     }
 }
 
-// sorts the $posts array by latest date
-function sortFunction($a, $b) {
+// sorts an arrays items by latest given date
+function sortFunction($a, $b) : int {
     return strtotime($b['date']) - strtotime($a['date']);
 }

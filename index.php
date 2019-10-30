@@ -61,9 +61,8 @@ usort($posts, "sortFunction");
     <footer>
         <h2 class="aboutSection">Yrgo Times	&#8482;</h2>
         <p>Yrgo Times is an English satirical digital media company and newspaper organization that publishes articles on international, national, and local news. The company is based in Gothenburg but originated as a weekly print publication on August 29, 1988 in Jokkmokk, Sweden. Yrgo Times began publishing online in the spring of 1996. In 2007, they began publishing satirical news audio and video online as Yrgo Times News Network.</p>
-        <p class="copyright">&copy; 2019 Yrgo Times</p>
     </footer>
-
+    <p class="copyright">&copy; 2019 Yrgo Times</p>
     <script src="main.js">
     </script>
     </body>
