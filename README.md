@@ -1,19 +1,26 @@
 # Plain News
 
-# Prerequisites
-You need a server software for example MAMP
+<img src="https://media.giphy.com/media/3o7TKw46XUgKNHB8go/giphy.gif" width="100%">
 
-# Installing
-Clone or Fork the repository Open index.php from the public folder in your local server, ex localhost:8888
+## Installing
+Clone or fork this repository and start a PHP server in your terminal by entering:
 
-# Built With
+```bash
+php -S localhost:8000
+```
+
+## Built With
 - PHP
 - JavaScript
 - HTML
 - CSS
 
-# Authors
+## Testers
+Jesper Lundqvist
+Alexander Gustafsson
+
+## Authors
 Henric Björkvall
 
-# License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
