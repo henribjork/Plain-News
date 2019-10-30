@@ -27,6 +27,15 @@ Please make sure to update tests as appropriate.
 - Jesper Lundqvist
 - Alexander Gustafsson
 
+## constructive criticism by Marcus Augustsson
+
+- add linebreaks to make the array more readable.
+- maybe a comment about what type of data in the arrays.
+- index.php could use a few comments on <article>  and  <nav> just somthing to say "this is , and it does, " otherwise nice setup for a article page, easy to read.
+- it's recomended to have the link script in bottom of body but i could be wrong with logos or script links for other pages but it' s  somthing to think about.
+- maybe a more specefik explantion of what "getAuthorName" does.
+    Conclution: nice work 5/5 :+1:
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
