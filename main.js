@@ -4,6 +4,7 @@
     const elmnt = document.querySelector('.newsfeedTitle');
     elmnt.scrollIntoView({ behavior: 'smooth' });
 } 
+
  // scrolls to article section of web page
 function scrollToAboutPosition() {
     const elmnt = document.querySelector('.aboutSection');
