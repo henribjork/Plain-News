@@ -6,7 +6,7 @@
 School assignment, with the goals of creating a simple newsfeed with PHP, JavaScript, HTML and CSS.
 
 ## Installing
-Clone or fork this repository and start a PHP server in your terminal by entering:
+You need to have PHP installed on your computer. Clone or fork this repository and start a PHP server in your terminal by entering:
 
 ```bash
 php -S localhost:8000
