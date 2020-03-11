@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @param array $post
  * @return string
  */
-function getAuthorName(array $authors, array $post) : string  
+function getAuthorName(array $authors, array $post): string
 {
     $postId = $post['authorId'];
 
@@ -30,6 +30,7 @@ function getAuthorName(array $authors, array $post) : string
  * @param array $b
  * @return integer
  */
-function sortFunction(array $a, array $b) : int {
+function sortFunction(array $a, array $b): int
+{
     return strtotime($b['date']) - strtotime($a['date']);
 }

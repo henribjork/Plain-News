@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 $authors = [
@@ -28,7 +29,5 @@ $posts = [
 
     ['header' => './images/punk.jpg', 'title' => 'Punk Mortified After Being Named Employee of the Month', 'date' => '2019-01-12', 'content' => file_get_contents('./articles/punk.txt'), 'authorId' => 4, 'likes' => 10],
 
-    ['header' => './images/skincare.jpg', 'title' => 'Man Tricked into Skincare by Wolf on Package', 'date' => '2019-01-10', 'content' => file_get_contents('./articles/skincare.txt'),'authorId' => 5, 'likes' => 1]
+    ['header' => './images/skincare.jpg', 'title' => 'Man Tricked into Skincare by Wolf on Package', 'date' => '2019-01-10', 'content' => file_get_contents('./articles/skincare.txt'), 'authorId' => 5, 'likes' => 1]
 ];
-
-
